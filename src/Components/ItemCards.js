@@ -21,7 +21,7 @@ const ItemCards = ({ onAddToCart, cartItems = [] }) => {
                             <Card.Body>
                                 <Card.Title>{item.title}</Card.Title>
                                 <Card.Text>Description: {item.description}</Card.Text>
-                                <Card.Text>Item price: {item.price}</Card.Text>
+                                <Card.Text>Item price: ₹ {item.price}</Card.Text>
                                 <Button variant='secondary' size='md' disabled={isItemInCart(item.id)} onClick={() => onAddToCart(item)}>{isItemInCart(item.id) ? 'Added to Cart' : 'Add to Cart'}</Button>
                             </Card.Body>
                         </Card>
